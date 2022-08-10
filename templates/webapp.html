@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>mushroom classification</title>
+<style>
+fieldset {
+  background-color: #ADD8E6;
+}
+
+legend {
+
+
+  padding: 10px 10px;
+
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+    <div class="container">
+
+    <section class="About">
+
+        <a href='/about'><button class="btn btn-abt">ABOUT</button></a>
+
+    </section>
+
+    <section class="prediction">
+
+          <div class="content">
+            <h1 style="color:#000000"><b>Mushroom Classifier</b></h1>
+
+            <br><br>
+            <form  action = "\predict" method="POST">
+                <fieldset>
+                <legend></legend>
+                    <br>
+
+
+        <label>Gill color &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <select id="gill-color" name="gill-color"  required>
+          <option value="" selected disabled hidden> Select </option>
+
+            <option value="4">Black</option>
+            <option value="5">Brown</option>
+            <option value="0">Buff</option>
+            <option value="3">Chocolate</option>
+            <option value="2">Gray</option>
+            <option value="8">Green</option>
+            <option value="6">Orange</option>
+            <option value="7">Pink</option>
+            <option value="9">Purple</option>
+            <option value="1">Red</option>
+            <option value="10">White</option>
+            <option value="11">Yellow</option>
+        </select>
+        <br><br>
+
+        <label>Spore print color</label>
+          <select id="spore-print-color" name="spore-print-color">
+            <option value="">Select</option>
+            <option value="2">Black</option>
+            <option value="3">Brown</option>
+            <option value="4">Buff</option>
+            <option value="1">Chocolate</option>
+            <option value="5">Green</option>
+            <option value="8">Orange</option>
+            <option value="6">Purple</option>
+            <option value="7">White</option>
+            <option value="0">Yellow</option>
+
+          </select>
+        <br><br>
+
+        <label>population&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <select id="population" name="population"  required>
+          <option value="" selected disabled hidden> Select </option>
+
+            <option value="0">abundant</option>
+            <option value="1">clustered</option>
+            <option value="2">numerous</option>
+            <option value="3">scattered</option>
+            <option value="4">several</option>
+            <option value="5">solitary</option>
+
+        </select>
+        <br><br>
+
+        <label>Gill size  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <select id="gill-size" name="gill-size"  required>
+          <option value="" selected disabled hidden>Select&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+
+            <option value="0">broad</option>
+            <option value="1">narrow</option>
+        </select>
+        <br><br>
+
+        <label>Stalk root&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <select id="stalk-root" name="stalk-root"  required>
+          <option value="" selected disabled hidden>Select&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+
+            <option value="0">missing</option>
+            <option value="1">bulbous</option>
+            <option value="2">club</option>
+            <option value="3">equal</option>
+            <option value="4">rooted</option>
+        </select>
+        <br><br>
+        <label>Bruises &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <select id="bruises" name="bruises"  required>
+          <option value="" selected disabled hidden> Select&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </option>
+
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+
+        </select>
+        <br><br>
+
+        <label> Stalk shape &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <select id="stalk-shape" name="stalk-shape"  required>
+          <option value="" selected disabled hidden> Select </option>
+
+            <option value="0">enlarging</option>
+            <option value="1">tapering</option>
+
+        </select>
+        <br>
+        <br>
+        <button id="login-button" class="button" style="vertical-align:middle"><span>PREDICT</span></button>
+
+
+                <br><br>
+                </fieldset>
+                <br>
+                <h2 style="color: #110601  "><center> {{result}}</center> </h2>
+                <br>
+                <a href="/"><p style="color:Black"  align="middle"><b>Reset</b></p></a>
+                <br>
+        </form>
+
+            </div>
+    </section>
+    </div>
+</body>
+</html>
