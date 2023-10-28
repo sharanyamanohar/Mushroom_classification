@@ -12,3 +12,6 @@ Poisonous Oak and Ivy. The main goal is to predict which mushroom is
 poisonous & which is edible.
 
 [MUSHROOM CLASSIFICATION.pdf](https://github.com/sharanyamanohar/Mushroom_classification/files/10141544/MUSHROOM.CLASSIFICATION.pdf)
+
+
+Here is the video link in which you can access my video lectures-https://youtu.be/-KORSmpiP0E?si=xl9G4gTol1afeTOD
